@@ -1,0 +1,7 @@
+.DS_Store
+*.xcuserstate
+**/xcuserdata/
+
+# 不包含 iOS 应用工程与源代码（若将工程放在同一父目录，请勿复制进本仓库）
+**/*.xcodeproj/
+**/*.xcworkspace/
