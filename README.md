@@ -1,4 +1,4 @@
-# 儿童智商测试 · 隐私政策与技术支持（静态页）
+# IQ智商测试-免费版 · 隐私政策与技术支持（静态页）
 
 本仓库**仅**托管 App Store 所需的简体中文 **`privacy.html`** 与 **`support.html`**，通过 GitHub Pages 对外提供固定 HTTPS 链接。不包含 iOS 应用源代码。
 
