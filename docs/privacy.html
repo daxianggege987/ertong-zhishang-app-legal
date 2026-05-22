@@ -1,107 +1,336 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>隐私政策 · IQ智商测试-免费版</title>
+  <title>Privacy Policy · IQ Test - Free</title>
   <style>
-    :root { --bg:#f6f7fb; --card:#fff; --text:#1c1c1e; --muted:#636366; --link:#0a84ff; --line:#e5e5ea; }
+    :root { --bg:#f6f7fb; --card:#fff; --text:#1c1c1e; --muted:#636366; --link:#0a84ff; --line:#e5e5ea; --accent:#30d158; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 16px; }
-    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 48px; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 16px; }
+    main { max-width: 720px; margin: 0 auto; padding: 20px 20px 48px; }
+    .lang-bar { position: sticky; top: 0; z-index: 10; background: rgba(246,247,251,.95); backdrop-filter: blur(8px); padding: 12px 0 16px; margin-bottom: 8px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .lang-bar label { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+    .lang-bar select { flex: 1; min-width: 180px; max-width: 280px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: #fff; font-size: 0.95rem; }
+    .lang-panel[hidden] { display: none !important; }
     h1 { font-size: 1.5rem; margin: 0 0 8px; font-weight: 700; }
     .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
     h2 { font-size: 1.1rem; margin: 28px 0 10px; font-weight: 650; }
     p, li { margin: 0 0 12px; color: #2c2c2e; }
-    ul { padding-left: 1.25rem; margin: 0 0 12px; }
+    ul { padding-inline-start: 1.25rem; margin: 0 0 12px; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .card { background: var(--card); border-radius: 14px; padding: 22px 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 16px; border: 1px solid var(--line); }
+    .note { background: rgba(48, 209, 88, 0.1); border-inline-start: 4px solid var(--accent); padding: 12px 14px; border-radius: 0 10px 10px 0; margin: 14px 0; font-size: 0.95rem; }
     footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+    html[dir="rtl"] .note { border-radius: 10px 0 0 10px; }
+
   </style>
 </head>
 <body>
   <main>
+    <div class="lang-bar">
+      <label for="lang-select" id="lang-label">Language</label>
+      <select id="lang-select" aria-labelledby="lang-label">
+          <option value="zh-Hans">简体中文</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="de">Deutsch</option>
+          <option value="pt-BR">Português (BR)</option>
+          <option value="ar">العربية</option>
+      </select>
+    </div>
+    <div class="lang-panel" data-lang="zh-Hans" data-title="隐私政策 · IQ智商测试-免费版" dir="ltr">
     <h1>隐私政策</h1>
-    <p class="meta">适用于「IQ智商测试-免费版」应用（以下简称「本应用」）。最后更新日期：2026 年 5 月 22 日。</p>
-
-    <div class="card">
-      <p>我们重视您的个人信息与隐私。本政策说明您使用本应用时，我们如何收集、使用、存储与保护相关信息。若您不同意本政策，请停止使用本应用。继续使用即表示您已阅读并理解本政策。</p>
-      <p>本应用面向普通用户，<strong>不属于 Apple App Store「儿童分类（Kids Category）」应用</strong>。若您为未成年人，请在监护人知情并同意下使用本应用。</p>
-    </div>
-
-    <h2>一、我们收集哪些信息</h2>
-    <div class="card">
-      <p>本应用<strong>无需注册账号</strong>。我们通常不会要求您主动提交姓名、身份证号、住址、手机号等可直接识别个人身份的敏感信息。</p>
-      <p>为实现功能、展示广告、统计访问及符合平台要求，以下信息可能由本应用或第三方技术服务方在合法合规前提下自动处理（具体取决于您的系统版本、设备设置及第三方实现）：</p>
-      <ul>
-        <li><strong>设备与系统信息：</strong>如设备型号、操作系统版本、语言区域、屏幕分辨率等，用于界面适配、故障排查与兼容性保障。</li>
-        <li><strong>广告相关标识与活动信息：</strong>本应用集成 Google AdMob。在您通过 Apple「App 追踪透明度（ATT）」授权后，广告服务可能处理广告标识符（如 IDFA）及与广告投放、效果衡量相关的信息。您可在 iOS「设置 → 隐私与安全性 → 跟踪」中管理授权。</li>
-        <li><strong>访问统计信息：</strong>本应用通过第三方统计脚本（悟空统计）以<strong>汇总或匿名化</strong>方式了解访问与使用情况，用于改进产品体验。</li>
-        <li><strong>本地测验数据：</strong>答题选择与进度主要保存在设备本地，用于完成测验流程与展示结果，不上传至我们自有的用户账号服务器。</li>
-      </ul>
-    </div>
-
-    <h2>二、第三方服务</h2>
-    <div class="card">
-      <p>本应用可能接入以下类型的第三方服务（以您设备上实际集成为准）：</p>
-      <ul>
-        <li><strong>Google AdMob（广告）：</strong>用于展示横幅与插页广告。Google 可能依据其隐私政策处理设备标识符、广告互动等数据。参阅：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a>、<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob 政策</a>。</li>
-        <li><strong>悟空统计（访问统计）：</strong>通过应用内 Web 组件加载统计脚本，用于汇总访问数据。数据处理遵循该服务提供方规则。</li>
-      </ul>
-      <p>我们会以最小必要原则接入上述服务，但第三方在其系统中的数据处理活动仍受其自身政策约束。</p>
-    </div>
-
-    <h2>三、信息的使用目的</h2>
-    <div class="card">
-      <ul>
-        <li>提供、维护与改进 IQ 图形推理测验功能与界面体验；</li>
-        <li>在合法合规前提下展示与管理广告；</li>
-        <li>了解应用使用情况以优化产品；</li>
-        <li>保障软件安全、预防滥用与欺诈；</li>
-        <li>遵循法律法规或监管要求。</li>
-      </ul>
-    </div>
-
-    <h2>四、信息的存储与跨境传输</h2>
-    <div class="card">
-      <p>除法律另有规定或取得您的单独同意外，我们在中华人民共和国境内运营中收集与产生的个人信息，将存储在境内法律法规允许的范围。因第三方全球基础设施导致的数据处理或跨境传输，将依法依规并参考第三方说明进行。</p>
-    </div>
-
-    <h2>五、信息共享与披露</h2>
-    <div class="card">
-      <p>我们不会向无关第三方出售您的个人信息。仅在以下情形可能共享或披露必要信息：</p>
-      <ul>
-        <li>取得您的明确同意（如 ATT 授权）；</li>
-        <li>为实现本政策所述第三方服务功能；</li>
-        <li>根据法律法规、司法机关或行政主管部门的强制性要求。</li>
-      </ul>
-    </div>
-
-    <h2>六、您的权利</h2>
-    <div class="card">
-      <p>在适用法律允许的范围内，您享有查询、复制、更正、删除等权利。由于本应用通常不建立用户账号，部分请求可通过 iOS 系统广告与跟踪设置、删除并重装应用，或通过<a href="support.html">技术支持</a>渠道联系我们协助处理。</p>
-    </div>
-
-    <h2>七、未成年人</h2>
-    <div class="card">
-      <p>本应用不面向 Apple「儿童分类」渠道。若您认为我们在未经监护人同意的情况下处理了未成年人的个人信息，请通过技术支持页联系我们，核实后将尽快处理。</p>
-    </div>
-
-    <h2>八、政策更新</h2>
-    <div class="card">
-      <p>我们可能适时修订本政策。重大变更将通过应用内提示或网页公告等合理方式告知。继续使用本应用即表示您接受更新后的政策（法律要求另行取得同意的除外）。</p>
-    </div>
-
-    <h2>九、联系我们</h2>
-    <div class="card">
-      <p>如对本政策有疑问，请访问 <a href="support.html">技术支持页面</a>，或通过 App Store 中本应用的支持入口与我们联系。</p>
-    </div>
+    <p class="meta">适用于「IQ智商测试-免费版」（以下简称「本应用」）。最后更新：2026 年 5 月 22 日。</p>
+      <div class="card"><p>我们重视您的个人信息与隐私。本政策说明您使用本应用时，我们如何收集、使用、存储与保护相关信息。若您不同意本政策，请停止使用本应用。</p><p>本应用面向普通用户，<strong>不属于 Apple App Store「儿童分类」应用</strong>。若您为未成年人，请在监护人知情并同意下使用。</p></div>
+      <h2>一、我们收集哪些信息</h2>
+      <div class="card"><p>本应用<strong>无需注册账号</strong>。我们通常不会要求您提交姓名、身份证号等敏感个人信息。</p><p>为实现功能、展示广告与统计访问，以下信息可能由本应用或第三方在合法合规前提下自动处理：</p><ul><li><strong>设备与系统信息：</strong>设备型号、系统版本、语言区域等，用于适配与故障排查。</li><li><strong>广告相关标识：</strong>集成 Google AdMob。经您通过 ATT 授权后，可能处理 IDFA 及广告效果相关数据。可在「设置 → 隐私与安全性 → 跟踪」中管理。</li><li><strong>访问统计：</strong>通过悟空统计以汇总/匿名方式了解使用情况。</li><li><strong>本地测验数据：</strong>答题进度主要保存在设备本地，用于完成测验与展示结果。</li></ul></div>
+      <h2>二、第三方服务</h2>
+      <div class="card"><ul><li><strong>Google AdMob：</strong>展示横幅与插页广告。<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a></li><li><strong>悟空统计：</strong>汇总访问统计。</li></ul></div>
+      <h2>三、使用目的</h2>
+      <div class="card"><ul><li>提供与改进测验功能；</li><li>展示与管理广告；</li><li>了解使用情况；</li><li>保障安全与合规。</li></ul></div>
+      <h2>四、存储与跨境</h2>
+      <div class="card"><p>我们在境内法律法规允许范围内存储信息。第三方全球基础设施可能导致数据在其服务器上处理，我们将依法依规保护。</p></div>
+      <h2>五、共享与披露</h2>
+      <div class="card"><p>我们不会出售个人信息。仅在取得同意、实现第三方服务功能或法律要求时共享必要信息。</p></div>
+      <h2>六、您的权利</h2>
+      <div class="card"><p>您可通过系统设置、删除重装应用或通过<a href="support.html">技术支持</a>联系我们行使相关权利。</p></div>
+      <h2>七、未成年人</h2>
+      <div class="card"><p>本应用不属于儿童分类。若您认为我们在未经监护人同意下处理了未成年人信息，请联系我们处理。</p></div>
+      <h2>八、政策更新</h2>
+      <div class="card"><p>我们可能适时修订本政策，重大变更将通过合理方式告知。</p></div>
+      <h2>九、联系我们</h2>
+      <div class="card"><p>请访问 <a href="support.html">技术支持页面</a> 或通过 App Store 支持入口联系我们。</p></div>
 
     <footer>
       <p><a href="support.html">技术支持</a></p>
       <p>© IQ智商测试-免费版</p>
     </footer>
+    </div>
+    <div class="lang-panel" data-lang="en" data-title="Privacy Policy · IQ Test - Free" dir="ltr">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Applies to "IQ Test - Free" (the "App"). Last updated: May 22, 2026.</p>
+      <div class="card"><p>We respect your privacy. This policy explains how we collect, use, store, and protect information when you use the App. If you disagree, please stop using the App.</p><p>The App is for a general audience and is <strong>NOT in the Apple App Store Kids Category</strong>. Minors should use it with guardian consent.</p></div>
+      <h2>1. Information We Collect</h2>
+      <div class="card"><p>The App requires <strong>no account registration</strong>. We generally do not ask for names, ID numbers, or similar sensitive data.</p><p>To provide features, show ads, and measure usage, the following may be processed automatically by us or third parties:</p><ul><li><strong>Device & system info:</strong> model, OS version, locale—for compatibility and troubleshooting.</li><li><strong>Advertising identifiers:</strong> Google AdMob is integrated. After you allow App Tracking Transparency (ATT), IDFA and ad-related data may be processed. Manage in Settings → Privacy & Security → Tracking.</li><li><strong>Usage analytics:</strong> aggregate/anonymous visit statistics via Wukong analytics.</li><li><strong>Local quiz data:</strong> answers and progress stay on device for the session flow.</li></ul></div>
+      <h2>2. Third-Party Services</h2>
+      <div class="card"><ul><li><strong>Google AdMob:</strong> banner and interstitial ads. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li><li><strong>Wukong analytics:</strong> aggregate visit statistics.</li></ul></div>
+      <h2>3. Purposes of Use</h2>
+      <div class="card"><ul><li>Provide and improve the quiz experience;</li><li>Display and manage ads;</li><li>Understand usage;</li><li>Security and legal compliance.</li></ul></div>
+      <h2>4. Storage & Cross-Border</h2>
+      <div class="card"><p>We store information as permitted by applicable law. Third-party global infrastructure may process data on their servers; we protect data as required by law.</p></div>
+      <h2>5. Sharing & Disclosure</h2>
+      <div class="card"><p>We do not sell personal information. We share only with consent, to operate third-party features, or when required by law.</p></div>
+      <h2>6. Your Rights</h2>
+      <div class="card"><p>You may exercise rights via system settings, reinstalling the App, or contacting us via <a href="support.html">Support</a>.</p></div>
+      <h2>7. Minors</h2>
+      <div class="card"><p>The App is not in the Kids Category. Contact us if you believe we processed a minor's data without guardian consent.</p></div>
+      <h2>8. Policy Updates</h2>
+      <div class="card"><p>We may update this policy; material changes will be communicated reasonably.</p></div>
+      <h2>9. Contact</h2>
+      <div class="card"><p>Visit <a href="support.html">Support</a> or use the App Store support link for the App.</p></div>
+
+    <footer>
+      <p><a href="support.html">Support</a></p>
+      <p>© IQ Test - Free</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ja" data-title="プライバシーポリシー · IQテスト - 無料版" dir="ltr">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">「IQテスト - 無料版」（本アプリ）に適用されます。最終更新：2026年5月22日。</p>
+      <div class="card"><p>私たちはプライバシーを尊重します。本ポリシーは情報の取り扱いを説明します。本アプリは<strong>App Storeのキッズカテゴリではありません</strong>。未成年者は保護者の同意のもとご利用ください。</p></div>
+      <h2>1. 収集する情報</h2>
+      <div class="card"><p>アカウント登録は不要です。Google AdMob 広告、ATT 同意後の IDFA、悟空統計、端末内の回答データを処理する場合があります。</p></div>
+      <h2>2. 第三者サービス</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>悟空統計</strong></li></ul></div>
+      <h2>3. 利用目的</h2>
+      <div class="card"><ul><li>機能提供・改善</li><li>広告</li><li>利用状況分析</li><li>安全・法令遵守</li></ul></div>
+      <h2>4. 保存と越境移転</h2>
+      <div class="card"><p>法令に従い保存します。第三者のグローバルインフラで処理される場合があります。</p></div>
+      <h2>5. 共有と開示</h2>
+      <div class="card"><p>個人情報を販売しません。同意、機能提供、法令に基づく場合に限り共有します。</p></div>
+      <h2>6. お客様の権利</h2>
+      <div class="card"><p>設定または <a href="support.html">サポート</a> からお問い合わせください。</p></div>
+      <h2>7. 未成年者</h2>
+      <div class="card"><p>キッズカテゴリではありません。お問い合わせください。</p></div>
+      <h2>8. ポリシーの更新</h2>
+      <div class="card"><p>本ポリシーを更新する場合があります。</p></div>
+      <h2>9. お問い合わせ</h2>
+      <div class="card"><p><a href="support.html">サポート</a> または App Store からご連絡ください。</p></div>
+
+    <footer>
+      <p><a href="support.html">サポート</a></p>
+      <p>© IQテスト - 無料版</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ko" data-title="개인정보 처리방침 · IQ 테스트 - 무료" dir="ltr">
+    <h1>개인정보 처리방침</h1>
+    <p class="meta">「IQ 테스트 - 무료」(본 앱)에 적용됩니다. 최종 업데이트: 2026년 5월 22일.</p>
+      <div class="card"><p>당사는 개인정보를 중요하게 생각합니다. 본 앱은 <strong>App Store 키즈 카테고리에 해당하지 않습니다</strong>. 미성년자는 보호자 동의 하에 이용하세요.</p></div>
+      <h2>1. 수집 정보</h2>
+      <div class="card"><p>계정 등록이 필요 없습니다. Google AdMob, ATT 동의 후 IDFA, Wukong 통계, 기기 내 답안 데이터가 처리될 수 있습니다.</p></div>
+      <h2>2. 제3자 서비스</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>Wukong 통계</strong></li></ul></div>
+      <h2>3. 이용 목적</h2>
+      <div class="card"><ul><li>기능 제공·개선</li><li>광고</li><li>사용 분석</li><li>보안·법률 준수</li></ul></div>
+      <h2>4. 저장 및 국외 이전</h2>
+      <div class="card"><p>법률에 따라 저장하며 제3자 인프라에서 처리될 수 있습니다.</p></div>
+      <h2>5. 공유 및 공개</h2>
+      <div class="card"><p>개인정보를 판매하지 않습니다.</p></div>
+      <h2>6. 귀하의 권리</h2>
+      <div class="card"><p>설정 또는 <a href="support.html">지원</a>으로 문의하세요.</p></div>
+      <h2>7. 미성년자</h2>
+      <div class="card"><p>키즈 카테고리가 아닙니다.</p></div>
+      <h2>8. 정책 업데이트</h2>
+      <div class="card"><p>정책이 업데이트될 수 있습니다.</p></div>
+      <h2>9. 문의</h2>
+      <div class="card"><p><a href="support.html">지원</a> 또는 App Store를 이용하세요.</p></div>
+
+    <footer>
+      <p><a href="support.html">지원</a></p>
+      <p>© IQ 테스트 - 무료</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="fr" data-title="Politique de confidentialité · Test de QI - Gratuit" dir="ltr">
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">S'applique à « Test de QI - Gratuit » (l'« App »). Dernière mise à jour : 22 mai 2026.</p>
+      <div class="card"><p>Nous respectons votre vie privée. L'App n'est <strong>PAS dans la catégorie Enfants</strong> de l'App Store. Les mineurs doivent l'utiliser avec l'accord d'un tuteur.</p></div>
+      <h2>1. Informations collectées</h2>
+      <div class="card"><p>Pas de compte requis. AdMob, IDFA (si ATT autorisé), statistiques Wukong, données locales de quiz.</p></div>
+      <h2>2. Services tiers</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>Statistiques Wukong</strong></li></ul></div>
+      <h2>3. Finalités</h2>
+      <div class="card"><ul><li>Fournir et améliorer l'App</li><li>Publicités</li><li>Analyse d'usage</li><li>Sécurité et conformité</li></ul></div>
+      <h2>4. Stockage et transferts</h2>
+      <div class="card"><p>Stockage conforme à la loi ; traitement possible par des tiers.</p></div>
+      <h2>5. Partage</h2>
+      <div class="card"><p>Pas de vente de données personnelles.</p></div>
+      <h2>6. Vos droits</h2>
+      <div class="card"><p>Via Réglages ou <a href="support.html">Assistance</a>.</p></div>
+      <h2>7. Mineurs</h2>
+      <div class="card"><p>Pas catégorie Enfants.</p></div>
+      <h2>8. Mises à jour</h2>
+      <div class="card"><p>Mises à jour possibles.</p></div>
+      <h2>9. Contact</h2>
+      <div class="card"><p><a href="support.html">Assistance</a> ou App Store.</p></div>
+
+    <footer>
+      <p><a href="support.html">Assistance</a></p>
+      <p>© Test de QI - Gratuit</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="es" data-title="Política de privacidad · Test de CI - Gratis" dir="ltr">
+    <h1>Política de privacidad</h1>
+    <p class="meta">Aplica a «Test de CI - Gratis» (la «App»). Última actualización: 22 de mayo de 2026.</p>
+      <div class="card"><p>Respetamos su privacidad. La App <strong>NO está en la categoría Infantil</strong> de App Store. Los menores deben usarla con consentimiento parental.</p></div>
+      <h2>1. Información recopilada</h2>
+      <div class="card"><p>Sin registro. AdMob, IDFA (si ATT permitido), Wukong, datos locales del test.</p></div>
+      <h2>2. Servicios de terceros</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>Estadísticas Wukong</strong></li></ul></div>
+      <h2>3. Finalidades</h2>
+      <div class="card"><ul><li>Prestar y mejorar la App</li><li>Anuncios</li><li>Análisis de uso</li><li>Seguridad y cumplimiento</li></ul></div>
+      <h2>4. Almacenamiento</h2>
+      <div class="card"><p>Almacenamiento legal ; posible procesamiento por terceros.</p></div>
+      <h2>5. Compartición</h2>
+      <div class="card"><p>No vendemos datos personales.</p></div>
+      <h2>6. Sus derechos</h2>
+      <div class="card"><p>Configuración o <a href="support.html">Soporte</a>.</p></div>
+      <h2>7. Menores</h2>
+      <div class="card"><p>No categoría Infantil.</p></div>
+      <h2>8. Actualizaciones</h2>
+      <div class="card"><p>Actualizaciones posibles.</p></div>
+      <h2>9. Contacto</h2>
+      <div class="card"><p><a href="support.html">Soporte</a> o App Store.</p></div>
+
+    <footer>
+      <p><a href="support.html">Soporte</a></p>
+      <p>© Test de CI - Gratis</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="de" data-title="Datenschutz · IQ-Test - Kostenlos" dir="ltr">
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Gilt für „IQ-Test - Kostenlos“ (die „App“). Zuletzt aktualisiert: 22. Mai 2026.</p>
+      <div class="card"><p>Wir respektieren Ihre Privatsphäre. Die App ist <strong>NICHT in der Kids-Kategorie</strong> des App Store. Minderjährige nutzen sie mit Einwilligung der Erziehungsberechtigten.</p></div>
+      <h2>1. Erhobene Daten</h2>
+      <div class="card"><p>Kein Konto nötig. AdMob, IDFA (bei ATT), Wukong-Statistik, lokale Quizdaten.</p></div>
+      <h2>2. Drittanbieter</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>Wukong-Statistik</strong></li></ul></div>
+      <h2>3. Zwecke</h2>
+      <div class="card"><ul><li>App bereitstellen/verbessern</li><li>Werbung</li><li>Nutzungsanalyse</li><li>Sicherheit & Recht</li></ul></div>
+      <h2>4. Speicherung</h2>
+      <div class="card"><p>Speicherung nach Gesetz; Verarbeitung durch Dritte möglich.</p></div>
+      <h2>5. Weitergabe</h2>
+      <div class="card"><p>Kein Verkauf personenbezogener Daten.</p></div>
+      <h2>6. Ihre Rechte</h2>
+      <div class="card"><p>Über Einstellungen oder <a href="support.html">Support</a>.</p></div>
+      <h2>7. Minderjährige</h2>
+      <div class="card"><p>Keine Kids-Kategorie.</p></div>
+      <h2>8. Aktualisierungen</h2>
+      <div class="card"><p>Aktualisierungen möglich.</p></div>
+      <h2>9. Kontakt</h2>
+      <div class="card"><p><a href="support.html">Support</a> oder App Store.</p></div>
+
+    <footer>
+      <p><a href="support.html">Support</a></p>
+      <p>© IQ-Test - Kostenlos</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="pt-BR" data-title="Política de Privacidade · Teste de QI - Grátis" dir="ltr">
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Aplica-se ao «Teste de QI - Grátis» (o «App»). Última atualização: 22 de maio de 2026.</p>
+      <div class="card"><p>Respeitamos sua privacidade. O App <strong>NÃO está na categoria Infantil</strong> da App Store. Menores devem usá-lo com consentimento dos responsáveis.</p></div>
+      <h2>1. Informações coletadas</h2>
+      <div class="card"><p>Sem cadastro. AdMob, IDFA (se ATT permitido), Wukong, dados locais do teste.</p></div>
+      <h2>2. Serviços de terceiros</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>Estatísticas Wukong</strong></li></ul></div>
+      <h2>3. Finalidades</h2>
+      <div class="card"><ul><li>Fornecer e melhorar o App</li><li>Anúncios</li><li>Análise de uso</li><li>Segurança e conformidade</li></ul></div>
+      <h2>4. Armazenamento</h2>
+      <div class="card"><p>Armazenamento conforme a lei; processamento por terceiros possível.</p></div>
+      <h2>5. Compartilhamento</h2>
+      <div class="card"><p>Não vendemos dados pessoais.</p></div>
+      <h2>6. Seus direitos</h2>
+      <div class="card"><p>Configurações ou <a href="support.html">Suporte</a>.</p></div>
+      <h2>7. Menores</h2>
+      <div class="card"><p>Não é categoria Infantil.</p></div>
+      <h2>8. Atualizações</h2>
+      <div class="card"><p>Atualizações possíveis.</p></div>
+      <h2>9. Contato</h2>
+      <div class="card"><p><a href="support.html">Suporte</a> ou App Store.</p></div>
+
+    <footer>
+      <p><a href="support.html">Suporte</a></p>
+      <p>© Teste de QI - Grátis</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ar" data-title="سياسة الخصوصية · اختبار IQ - مجاني" dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+    <p class="meta">تنطبق على «اختبار IQ - مجاني» («التطبيق»). آخر تحديث: 22 مايو 2026.</p>
+      <div class="card"><p>نحن نحترم خصوصيتك. التطبيق <strong>ليس ضمن فئة الأطفال</strong> في App Store. يجب على القُصَّر استخدامه بموافقة ولي الأمر.</p></div>
+      <h2>1. المعلومات التي نجمعها</h2>
+      <div class="card"><p>لا يلزم حساب. AdMob وIDFA (بعد ATT) وWukong وبيانات محلية للاختبار.</p></div>
+      <h2>2. خدمات الطرف الثالث</h2>
+      <div class="card"><ul><li><strong>Google AdMob</strong></li><li><strong>إحصاءات Wukong</strong></li></ul></div>
+      <h2>3. أغراض الاستخدام</h2>
+      <div class="card"><ul><li>تقديم التطبيق وتحسينه</li><li>الإعلانات</li><li>تحليل الاستخدام</li><li>الأمان والامتثال</li></ul></div>
+      <h2>4. التخزين</h2>
+      <div class="card"><p>تخزين وفق القانون؛ قد تُعالج البيانات على خوادم طرف ثالث.</p></div>
+      <h2>5. المشاركة</h2>
+      <div class="card"><p>لا نبيع المعلومات الشخصية.</p></div>
+      <h2>6. حقوقك</h2>
+      <div class="card"><p>عبر الإعدادات أو <a href="support.html">الدعم</a>.</p></div>
+      <h2>7. القُصَّر</h2>
+      <div class="card"><p>ليس ضمن فئة الأطفال.</p></div>
+      <h2>8. التحديثات</h2>
+      <div class="card"><p>قد نحدّث هذه السياسة.</p></div>
+      <h2>9. اتصل بنا</h2>
+      <div class="card"><p><a href="support.html">الدعم</a> أو App Store.</p></div>
+
+    <footer>
+      <p><a href="support.html">الدعم الفني</a></p>
+      <p>© اختبار IQ - مجاني</p>
+    </footer>
+    </div>
   </main>
+  <script>
+(function () {
+  var select = document.getElementById('lang-select');
+  var panels = document.querySelectorAll('.lang-panel');
+  var labels = {"zh-Hans": "ltr", "en": "ltr", "ja": "ltr", "ko": "ltr", "fr": "ltr", "es": "ltr", "de": "ltr", "pt-BR": "ltr", "ar": "rtl"};
+
+  function applyLang(code) {
+    panels.forEach(function (p) { p.hidden = p.dataset.lang !== code; });
+    document.documentElement.lang = code;
+    document.documentElement.dir = labels[code] || 'ltr';
+    select.value = code;
+    try { localStorage.setItem('legal-lang', code); } catch (e) {}
+    var panel = document.querySelector('.lang-panel[data-lang="' + code + '"]');
+    if (panel) {
+      var t = panel.dataset.title;
+      if (t) document.title = t;
+    }
+  }
+
+  var initial = 'en';
+  try {
+    var saved = localStorage.getItem('legal-lang');
+    var param = new URLSearchParams(location.search).get('lang');
+    if (param && labels[param]) initial = param;
+    else if (saved && labels[saved]) initial = saved;
+    else {
+      var nav = (navigator.language || 'en').replace('_', '-');
+      if (labels[nav]) initial = nav;
+      else if (nav.startsWith('zh')) initial = 'zh-Hans';
+      else if (nav.startsWith('pt')) initial = 'pt-BR';
+    }
+  } catch (e) {}
+  applyLang(initial);
+  select.addEventListener('change', function () { applyLang(select.value); });
+})();
+</script>
 </body>
 </html>

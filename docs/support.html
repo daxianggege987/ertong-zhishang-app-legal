@@ -1,63 +1,264 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>技术支持 · IQ智商测试-免费版</title>
+  <title>Support · IQ Test - Free</title>
   <style>
     :root { --bg:#f6f7fb; --card:#fff; --text:#1c1c1e; --muted:#636366; --link:#0a84ff; --line:#e5e5ea; --accent:#30d158; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 16px; }
-    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 48px; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 16px; }
+    main { max-width: 720px; margin: 0 auto; padding: 20px 20px 48px; }
+    .lang-bar { position: sticky; top: 0; z-index: 10; background: rgba(246,247,251,.95); backdrop-filter: blur(8px); padding: 12px 0 16px; margin-bottom: 8px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .lang-bar label { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+    .lang-bar select { flex: 1; min-width: 180px; max-width: 280px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: #fff; font-size: 0.95rem; }
+    .lang-panel[hidden] { display: none !important; }
     h1 { font-size: 1.5rem; margin: 0 0 8px; font-weight: 700; }
     .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
     h2 { font-size: 1.1rem; margin: 28px 0 10px; font-weight: 650; }
     p, li { margin: 0 0 12px; color: #2c2c2e; }
-    ul { padding-left: 1.25rem; margin: 0 0 12px; }
+    ul { padding-inline-start: 1.25rem; margin: 0 0 12px; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .card { background: var(--card); border-radius: 14px; padding: 22px 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 16px; border: 1px solid var(--line); }
-    .note { background: rgba(48, 209, 88, 0.1); border-left: 4px solid var(--accent); padding: 12px 14px; border-radius: 0 10px 10px 0; margin: 14px 0; font-size: 0.95rem; }
+    .note { background: rgba(48, 209, 88, 0.1); border-inline-start: 4px solid var(--accent); padding: 12px 14px; border-radius: 0 10px 10px 0; margin: 14px 0; font-size: 0.95rem; }
     footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+    html[dir="rtl"] .note { border-radius: 10px 0 0 10px; }
+
   </style>
 </head>
 <body>
   <main>
+    <div class="lang-bar">
+      <label for="lang-select" id="lang-label">Language</label>
+      <select id="lang-select" aria-labelledby="lang-label">
+          <option value="zh-Hans">简体中文</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="de">Deutsch</option>
+          <option value="pt-BR">Português (BR)</option>
+          <option value="ar">العربية</option>
+      </select>
+    </div>
+    <div class="lang-panel" data-lang="zh-Hans" data-title="技术支持 · IQ智商测试-免费版" dir="ltr">
     <h1>技术支持</h1>
     <p class="meta">「IQ智商测试-免费版」· 使用说明与帮助</p>
-
-    <div class="card">
-      <p><strong>应用简介：</strong>本应用提供图形推理类 IQ 趣味测验，可在碎片时间进行脑力挑战。测验结果与估算智商仅供娱乐参考，不构成专业智力测评、教育或医学结论。本应用<strong>不属于 App Store 儿童分类应用</strong>。</p>
-    </div>
-
+    <div class="card"><p>本应用提供图形推理类 IQ 趣味测验。结果仅供娱乐参考，不构成专业测评。本应用<strong>不属于 App Store 儿童分类</strong>。</p></div>
     <h2>联系我们</h2>
-    <div class="card">
-      <p>如有功能异常、内容建议或其它问题，您可通过以下方式反馈：</p>
-      <ul>
-        <li>在 iPhone / iPad 上打开 <strong>App Store</strong> → 进入「IQ智商测试-免费版」页面 → 使用应用支持或开发者提供的联系入口；</li>
-        <li>也可在 App Store 应用页面查找<strong>「App 支持」</strong>链接。</li>
-      </ul>
-      <p>反馈时建议附上：<strong>设备型号</strong>、<strong>iOS 版本</strong>、<strong>应用版本号</strong>以及<strong>问题步骤或截图</strong>，便于我们更快定位。</p>
-    </div>
-
+    <div class="card"><p>通过 App Store 中本应用页面的<strong>App 支持</strong>入口反馈问题。</p><p>请附上设备型号、iOS 版本、应用版本及问题步骤。</p></div>
     <h2>常见问题</h2>
-    <div class="card">
-      <p><strong>问：应用需要注册吗？</strong><br />不需要。打开应用即可开始测验。</p>
-      <p><strong>问：为什么首次启动会弹出跟踪授权？</strong><br />本应用使用第三方广告服务。系统会在首次启动时询问是否允许 App 跟踪，您可以选择允许或拒绝；之后可在「设置 → 隐私与安全性 → 跟踪」中更改。</p>
-      <p><strong>问：为什么有时会看到广告？</strong><br />本应用完全免费。广告由 Google AdMob 等平台投放，用于支持开发与运维。做题页可能显示横幅广告，查看结果前可能显示插页广告。</p>
-      <p><strong>问：估算智商代表什么？</strong><br />基于本次题目与作答情况的简易参考值，娱乐与自我挑战为主，不能替代标准化测评，也不用于任何诊断目的。</p>
-      <p><strong>问：题目无法显示或闪退？</strong><br />请尝试重启应用、升级 iOS 至应用要求的最低版本以上，或删除后从 App Store 重新安装。若仍异常，请通过上述渠道联系我们。</p>
+    <div class="card">      <p><strong>问：需要注册吗？</strong><br />不需要，打开即可测验。</p>
+      <p><strong>问：为何首次启动有跟踪授权？</strong><br />本应用使用第三方广告。系统会询问是否允许 App 跟踪，可在「设置 → 隐私与安全性 → 跟踪」中更改。</p>
+      <p><strong>问：为何有广告？</strong><br />应用完全免费。Google AdMob 投放横幅与插页广告以支持运维。</p>
+      <p><strong>问：估算智商是什么？</strong><br />基于本次作答的参考值，仅供娱乐，不作诊断。</p>
+      <p><strong>问：闪退或题目不显示？</strong><br />请重启、升级 iOS 或重装应用；仍异常请通过 App Store 联系我们。</p>
     </div>
-
-    <h2>兼容性与更新</h2>
-    <div class="card">
-      <p>本应用支持 iPhone 与 iPad（iOS 16.0 及以上，以 App Store 页面说明为准）。建议保持系统与应用为较新版本，以获得更好体验。</p>
-    </div>
-
+    <h2>兼容性</h2>
+    <div class="card"><p>支持 iPhone 与 iPad（iOS 16.0+，以 App Store 为准）。</p></div>
     <footer>
       <p><a href="privacy.html">隐私政策</a></p>
       <p>© IQ智商测试-免费版</p>
     </footer>
+    </div>
+    <div class="lang-panel" data-lang="en" data-title="Support · IQ Test - Free" dir="ltr">
+    <h1>Support</h1>
+    <p class="meta">IQ Test - Free · Help & FAQ</p>
+    <div class="card"><p>Graphical IQ-style quiz for casual brain training. Results are for entertainment only—not professional assessment. <strong>Not in the App Store Kids Category.</strong></p></div>
+    <h2>Contact Us</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>FAQ</h2>
+    <div class="card">      <p><strong>Do I need an account?</strong><br />No. Open the app and start the quiz.</p>
+      <p><strong>Why is there a tracking prompt on first launch?</strong><br />We use third-party ads. iOS asks for App Tracking Transparency (ATT). Change anytime in Settings → Privacy & Security → Tracking.</p>
+      <p><strong>Why ads?</strong><br />The app is free. Google AdMob shows banner and interstitial ads.</p>
+      <p><strong>What is estimated IQ?</strong><br />A simple reference from this session—for fun only, not diagnosis.</p>
+      <p><strong>Crash or missing images?</strong><br />Restart, update iOS, or reinstall. Contact us via App Store if it persists.</p>
+    </div>
+    <h2>Compatibility</h2>
+    <div class="card"><p>iPhone & iPad, iOS 16.0+ (see App Store listing).</p></div>
+    <footer>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p>© IQ Test - Free</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ja" data-title="サポート · IQテスト - 無料版" dir="ltr">
+    <h1>サポート</h1>
+    <p class="meta">IQテスト - 無料版 · ヘルプ</p>
+    <div class="card"><p>図形推理 IQ クイズ。結果は娯楽目的のみ。キッズカテゴリではありません。</p></div>
+    <h2>お問い合わせ</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>よくある質問</h2>
+    <div class="card">      <p><strong>登録は必要？</strong><br />不要です。</p>
+      <p><strong>跟踪許可とは？</strong><br />広告のため ATT が表示されます。</p>
+      <p><strong>広告は？</strong><br />無料提供のため AdMob を使用。</p>
+      <p><strong>推定IQは？</strong><br />娯楽参考値です。</p>
+      <p><strong>不具合は？</strong><br />再起動・再インストールをお試しください。</p>
+    </div>
+    <h2>互換性</h2>
+    <div class="card"><p>iPhone/iPad、iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">プライバシーポリシー</a></p>
+      <p>© IQテスト - 無料版</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ko" data-title="지원 · IQ 테스트 - 무료" dir="ltr">
+    <h1>지원</h1>
+    <p class="meta">IQ 테스트 - 무료 · 도움말</p>
+    <div class="card"><p>그래픽 IQ 퀴즈. 결과는 오락용. 키즈 카테고리 아님.</p></div>
+    <h2>문의</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>FAQ</h2>
+    <div class="card">      <p><strong>가입 필요?</strong><br />아니요.</p>
+      <p><strong>추적 요청?</strong><br />광고용 ATT입니다.</p>
+      <p><strong>광고?</strong><br />무료 앱, AdMob.</p>
+      <p><strong>추정 IQ?</strong><br />오락 참고값.</p>
+      <p><strong>오류?</strong><br />재시작/재설치.</p>
+    </div>
+    <h2>호환성</h2>
+    <div class="card"><p>iPhone/iPad, iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">개인정보 처리방침</a></p>
+      <p>© IQ 테스트 - 무료</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="fr" data-title="Assistance · Test de QI - Gratuit" dir="ltr">
+    <h1>Assistance</h1>
+    <p class="meta">Test de QI - Gratuit · Aide</p>
+    <div class="card"><p>Quiz de QI graphique, résultats ludiques uniquement. Pas catégorie Enfants.</p></div>
+    <h2>Contact</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>FAQ</h2>
+    <div class="card">      <p><strong>Compte requis ?</strong><br />Non.</p>
+      <p><strong>Suivi au lancement ?</strong><br />ATT pour les publicités.</p>
+      <p><strong>Publicités ?</strong><br />App gratuite, AdMob.</p>
+      <p><strong>QI estimé ?</strong><br />Référence ludique.</p>
+      <p><strong>Problème ?</strong><br />Redémarrer/réinstaller.</p>
+    </div>
+    <h2>Compatibilité</h2>
+    <div class="card"><p>iPhone/iPad, iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">Confidentialité</a></p>
+      <p>© Test de QI - Gratuit</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="es" data-title="Soporte · Test de CI - Gratis" dir="ltr">
+    <h1>Soporte</h1>
+    <p class="meta">Test de CI - Gratis · Ayuda</p>
+    <div class="card"><p>Quiz de CI gráfico, solo entretenimiento. No categoría Infantil.</p></div>
+    <h2>Contacto</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>Preguntas</h2>
+    <div class="card">      <p><strong>¿Registro?</strong><br />No.</p>
+      <p><strong>¿Seguimiento?</strong><br />ATT para anuncios.</p>
+      <p><strong>¿Anuncios?</strong><br />App gratis, AdMob.</p>
+      <p><strong>¿CI estimado?</strong><br />Solo referencia.</p>
+      <p><strong>¿Errores?</strong><br />Reiniciar/reinstalar.</p>
+    </div>
+    <h2>Compatibilidad</h2>
+    <div class="card"><p>iPhone/iPad, iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">Privacidad</a></p>
+      <p>© Test de CI - Gratis</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="de" data-title="Support · IQ-Test - Kostenlos" dir="ltr">
+    <h1>Support</h1>
+    <p class="meta">IQ-Test - Kostenlos · Hilfe</p>
+    <div class="card"><p>Grafischer IQ-Quiz, nur Unterhaltung. Keine Kids-Kategorie.</p></div>
+    <h2>Kontakt</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>FAQ</h2>
+    <div class="card">      <p><strong>Konto nötig?</strong><br />Nein.</p>
+      <p><strong>Tracking?</strong><br />ATT für Werbung.</p>
+      <p><strong>Werbung?</strong><br />Kostenlose App, AdMob.</p>
+      <p><strong>Geschätzter IQ?</strong><br />Nur Referenz.</p>
+      <p><strong>Fehler?</strong><br />Neustart/neu installieren.</p>
+    </div>
+    <h2>Kompatibilität</h2>
+    <div class="card"><p>iPhone/iPad, iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">Datenschutz</a></p>
+      <p>© IQ-Test - Kostenlos</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="pt-BR" data-title="Suporte · Teste de QI - Grátis" dir="ltr">
+    <h1>Suporte</h1>
+    <p class="meta">Teste de QI - Grátis · Ajuda</p>
+    <div class="card"><p>Quiz de QI gráfico, só entretenimento. Não é categoria Infantil.</p></div>
+    <h2>Contato</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>Perguntas</h2>
+    <div class="card">      <p><strong>Cadastro?</strong><br />Não.</p>
+      <p><strong>Rastreamento?</strong><br />ATT para anúncios.</p>
+      <p><strong>Anúncios?</strong><br />App grátis, AdMob.</p>
+      <p><strong>QI estimado?</strong><br />Só referência.</p>
+      <p><strong>Erros?</strong><br />Reiniciar/reinstalar.</p>
+    </div>
+    <h2>Compatibilidade</h2>
+    <div class="card"><p>iPhone/iPad, iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">Privacidade</a></p>
+      <p>© Teste de QI - Grátis</p>
+    </footer>
+    </div>
+    <div class="lang-panel" data-lang="ar" data-title="الدعم · اختبار IQ - مجاني" dir="rtl">
+    <h1>الدعم الفني</h1>
+    <p class="meta">اختبار IQ - مجاني · مساعدة</p>
+    <div class="card"><p>اختبار IQ بصري للترفيه فقط. ليس ضمن فئة الأطفال.</p></div>
+    <h2>اتصل بنا</h2>
+    <div class="card"><p>Use the <strong>App Support</strong> link on this app's App Store page.</p><p>Include device model, iOS version, app version, and steps to reproduce.</p></div>
+    <h2>أسئلة شائعة</h2>
+    <div class="card">      <p><strong>هل يلزم حساب؟</strong><br />لا.</p>
+      <p><strong>تتبع عند التشغيل؟</strong><br />ATT للإعلانات.</p>
+      <p><strong>لماذا إعلانات؟</strong><br />تطبيق مجاني، AdMob.</p>
+      <p><strong>IQ المقدر؟</strong><br />للترفيه فقط.</p>
+      <p><strong>مشاكل؟</strong><br />أعد التشغيل أو أعد التثبيت.</p>
+    </div>
+    <h2>التوافق</h2>
+    <div class="card"><p>iPhone/iPad، iOS 16.0+</p></div>
+    <footer>
+      <p><a href="privacy.html">سياسة الخصوصية</a></p>
+      <p>© اختبار IQ - مجاني</p>
+    </footer>
+    </div>
   </main>
+  <script>
+(function () {
+  var select = document.getElementById('lang-select');
+  var panels = document.querySelectorAll('.lang-panel');
+  var labels = {"zh-Hans": "ltr", "en": "ltr", "ja": "ltr", "ko": "ltr", "fr": "ltr", "es": "ltr", "de": "ltr", "pt-BR": "ltr", "ar": "rtl"};
+
+  function applyLang(code) {
+    panels.forEach(function (p) { p.hidden = p.dataset.lang !== code; });
+    document.documentElement.lang = code;
+    document.documentElement.dir = labels[code] || 'ltr';
+    select.value = code;
+    try { localStorage.setItem('legal-lang', code); } catch (e) {}
+    var panel = document.querySelector('.lang-panel[data-lang="' + code + '"]');
+    if (panel) {
+      var t = panel.dataset.title;
+      if (t) document.title = t;
+    }
+  }
+
+  var initial = 'en';
+  try {
+    var saved = localStorage.getItem('legal-lang');
+    var param = new URLSearchParams(location.search).get('lang');
+    if (param && labels[param]) initial = param;
+    else if (saved && labels[saved]) initial = saved;
+    else {
+      var nav = (navigator.language || 'en').replace('_', '-');
+      if (labels[nav]) initial = nav;
+      else if (nav.startsWith('zh')) initial = 'zh-Hans';
+      else if (nav.startsWith('pt')) initial = 'pt-BR';
+    }
+  } catch (e) {}
+  applyLang(initial);
+  select.addEventListener('change', function () { applyLang(select.value); });
+})();
+</script>
 </body>
 </html>
